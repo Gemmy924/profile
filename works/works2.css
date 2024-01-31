@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: auto;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    transition: 0.7s;
+    font-size: 20px;
+    z-index: 99;
+    }
+
+ nav #nav_area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_area{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1,
+header h2,
+#nav_area ul li a
+{
+    color: white;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+#nav_area img a{
+    width: 20%;
+    margin-left: 30px;
+}
+
+#nav_area ul{
+    display: flex;
+    margin-left: 250px;
+}
+#nav_area ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#nav_area a{
+    color: white;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+#nav_area .insta_icon a img{
+    width: 20%;
+}
+
+#nav_area div img{
+    width: 50px;
+    margin: auto 24px;
+}
+
+.background::after{
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.background>header nav, .contentbox, .footer{
+  position: relative;
+  z-index: 3;
+}
+
+#works2_section{
+    width: 80%;
+    margin: 110px auto;
+}
+
+
+#works2_section h1{
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+
+.container1{
+    margin: 70px auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-areas: 
+    "box1 box1 box2 box3"
+    "box1 box1 box4 box4"
+    "box5 box6 box4 box4"
+    "box7 box7 box7 box8"
+    "box7 box7 box7 box9"
+    "box10 box10 box11 box9"
+    "box10 box10 box11 box9";
+    gap: 10px;
+}
+
+.item1{
+    background-image: url(./img-works/jinbutu4.jpg);
+    grid-area: box1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.item2{
+    background-image: url(./img-works/jinbutu1.jpg);
+    grid-area: box2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.item3{
+    background-image: url(./img-works/market2.jpg);
+    grid-area: box3;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4{
+    background-image: url(./img-works/venetia1改.jpg);
+    grid-area: box4;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item5{
+    background-image: url(./img-works/tyukagai1改.jpg);
+    grid-area: box5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item6{
+    background-image: url(./img-works/jinbutu3.jpg);
+    grid-area: box6;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.item7{
+    background-image: url(./img-works/shellbeach.jpg);
+    grid-area: box7;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item8{
+    background-image: url(./img-works/jinbutu2.jpg);
+    grid-area: box8;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item9{
+    background-image: url(./img-works/reilway.jpg);
+    grid-area: box9;
+    width: 103%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.item10{
+    background-image: url(./img-works/sanmarko.jpg);
+    grid-area: box10;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.item11{
+    background-image: url(./img-works/market1.jpg);
+    grid-area: box11;
+    height: 57%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 15vh;
+    color: #ffffff;
+    background-color: #5f5f5f;
+    bottom: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a img{
+    margin: 0 auto;
+    padding: 0;
+    height: 70%;
+}
+
+small{
+       text-align: center;
+}
